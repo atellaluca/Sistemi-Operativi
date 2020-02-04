@@ -12,7 +12,7 @@ int pos;
 
 void schermoIniziale();
 void inizializza(bool arrayDiBool[NUM_FILOSOFI]);
-void stampaStato(int pos, string messaggio, long unsigned int id);
+void stampaStato(int pos, string messaggio);
 void *prendiForchetta(void* numeroForchette);
 void creaThread(pthread_t filosofi[NUM_FILOSOFI],int* numeroForchette);
 void signal(int& s);
@@ -46,20 +46,20 @@ void *prendiForchetta(void* numeroForchette){
 		//*(int*)numeroForchette = *(int*)numeroForchette - 1;
 		wait(*(int*)numeroForchette);
 		haPresoLaForchetta[pos] = true;
-		stampaStato(pos, "HA PRESO LA FORCHETTA",filosofi[pos]);
+		stampaStato(pos, "HA PRESO LA FORCHETTA");
 		cout <<"Numero forchette: " << *(int*)numeroForchette << endl;
 		pthread_join(filosofi[pos],0);
 		pthread_exit(0);
 		//cout << "POS:" << pos << endl;
 	} else if(haPresoLaForchetta[pos] == true && *(int*)numeroForchette < n){
-		stampaStato(pos,"STA MANGIANDO", filosofi[pos]);
+		stampaStato(pos,"STA MANGIANDO");
 	    haPresoLaForchetta[pos] = false;
 	    //*(int*)numeroForchette = *(int*)numeroForchette + 1;
 	     signal(*(int*)numeroForchette);
 	     cout <<"Numero forchette: " << *(int*)numeroForchette << endl;
 	     pthread_exit(0);
 	} else if(haPresoLaForchetta[pos] == false && *(int*)numeroForchette < n){
-		stampaStato(pos,"STA PENSANDO",filosofi[pos]);
+		stampaStato(pos,"STA PENSANDO");
 		pthread_exit(0);
 	}
 	//cout <<"Numero forchette: " << *(int*)numeroForchette << endl;
@@ -70,7 +70,8 @@ void *prendiForchetta(void* numeroForchette){
 void creaThread(pthread_t filosofi[NUM_FILOSOFI],int* numeroForchette){
 	for(pos = 0; pos < NUM_FILOSOFI; pos++){
 		usleep(1000000);
-		pthread_create(&filosofi[pos],NULL,prendiForchetta,(void*)numeroForchette);
+		int thread = pthread_create(&filosofi[pos],NULL,prendiForchetta,(void*)numeroForchette);
+		//cout << thread;
 		pthread_join(filosofi[pos],0);
 	}
 }
@@ -86,8 +87,8 @@ void signal(int& s){
 }
 
 
-void stampaStato(int pos, string messaggio, long unsigned int id){
-	 cout <<"FILOSOFO: " << pos + 1 <<" " << messaggio << "(ID: " << id << ")" << endl;
+void stampaStato(int pos, string messaggio){
+	 cout <<"FILOSOFO: " << pos + 1 <<" " << messaggio << endl;
 }
 
 void schermoIniziale(){
