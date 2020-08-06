@@ -1,2 +1,3 @@
-# Università
-Progetto proposto per il corso di Sistemi Operativi dell'Università degli studi della Basilicata.
+# Sistemi operativi
+Progetto proposto all'esame del corso di Sistemi Operativi(Univetsità degli studi della Basilicata) per l'attribuzione della lode.
+Risolve il problema dei filosofi a cena utilizzando la libreria pthread.
