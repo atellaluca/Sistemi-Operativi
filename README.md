@@ -1,6 +1,11 @@
-# 🍽️ Dining Philosophers Problem - Pthreads Implementation
+# 🍽️ Dining Philosophers Problem with Pthreads
 
 ![Dining Philosophers Problem](./images/dining-philosophers-problem.png)
+
+[![GitHub issues](https://img.shields.io/github/issues/atellaluca/dining-philosophers?style=flat-square)](https://github.com/atellaluca/dining-philosophers/issues)
+[![GitHub stars](https://img.shields.io/github/stars/atellaluca/dining-philosophers?style=flat-square)](https://github.com/atellaluca/dining-philosophers/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/atellaluca/dining-philosophers?style=flat-square)](https://github.com/atellaluca/dining-philosophers/network)
+[![GitHub license](https://img.shields.io/github/license/atellaluca/dining-philosophers?style=flat-square)](https://github.com/atellaluca/dining-philosophers/blob/master/LICENSE.txt)
 
 ## 📖 Overview
 
