@@ -11,7 +11,7 @@
 
 This repository contains an implementation of the classic **Dining Philosophers Problem** 🧠, using **Pthreads** and **semaphores** in C++. The problem showcases process synchronization, where five philosophers 🧑‍🎓 share limited resources (forks 🍴) to alternate between eating 🍝 and thinking 🤔. The solution ensures safe resource allocation and deadlock prevention 🔒.
 
-This project is part of the **Operating Systems** course at the **University of Basilicata**, led by Professor **Domenico Daniele Bloisi** 🏛️.
+This project was included until a few years ago as an example in the **Operating Systems** course at the **University of Basilicata**, led by Professor **Domenico Daniele Bloisi** 🏛️
 
 ## ✨ Features
 
