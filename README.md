@@ -1,6 +1,6 @@
 # 🍽️ Dining Philosophers Problem with Pthreads
 
-![Dining Philosophers Problem](./images/dining-philosophers-problem.png)
+![Dining Philosophers Problem](./media/dining-philosophers-problem.png)
 
 [![GitHub issues](https://img.shields.io/github/issues/atellaluca/dining-philosophers?style=flat-square)](https://github.com/atellaluca/dining-philosophers/issues)
 [![GitHub stars](https://img.shields.io/github/stars/atellaluca/dining-philosophers?style=flat-square)](https://github.com/atellaluca/dining-philosophers/stargazers)
@@ -35,6 +35,8 @@ This project is part of the **Operating Systems** course at the **University of 
 3. Run the executable:
    ```bash
    ./philosophers
+
+![Dining Philosophers run](./media/dining-philosophers-problem.gif)
 
 ## 🏷️ Topics
 
