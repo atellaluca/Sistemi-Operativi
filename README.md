@@ -20,6 +20,10 @@ This project is part of the **Operating Systems** course at the **University of 
 - 🛡️ Synchronization using semaphores
 - 📊 Displays philosopher status (thinking, eating, waiting)
 
+## 🏗️ Project Structure
+
+- `dining-philosophers.cpp`: Main source code for the project.
+
 ## 🚀 How to Run
 
 1. Clone this repository:
@@ -31,10 +35,6 @@ This project is part of the **Operating Systems** course at the **University of 
 3. Run the executable:
    ```bash
    ./philosophers
-
-## 🏗️ Project Structure
-
-- `dining-philosophers.cpp`: Main source code for the project.
 
 ## 🏷️ Topics
 
